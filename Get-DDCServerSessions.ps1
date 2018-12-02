@@ -5,7 +5,7 @@
         [Parameter(Mandatory=$True,
                     ValueFromPipeLine=$True,
                     ValueFromPipeLineByPropertyName=$True,
-                    HelpMessage="The. Computer. Name.")]
+                    HelpMessage="The Citrix Delivery Controller you want to Query.  Accepts Multiple Servers")]
         [Alias('Hostname','cn','name')]                 
         [String[]]$Computername)
 
