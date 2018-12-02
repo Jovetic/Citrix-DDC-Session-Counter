@@ -1,0 +1,1 @@
+﻿Send-SlackMessage -Text (Get-DDCServerSessions|Out-String) -Webhook "https://hooks.slack.com/services/YOURWEBHOOKURI"
