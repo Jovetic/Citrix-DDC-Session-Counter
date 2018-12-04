@@ -1,6 +1,7 @@
 ﻿Function Send-SlackCitrixSessions{
 
-$Data = Get-DDCServerSessions
+
+$Data = Get-DDCServerSessions -Computername (Get-Content C:\scripts\Citrix\Private\Computers.txt)
 
 $SlackText = @()
         ForEach ($line in $Data){
